@@ -23,7 +23,7 @@
       <div class="callout"><strong>Your tasks stay on your device.</strong> Black and Blue does not operate a Minimal account, task-sync, backup, location, or collaboration server. Tasks, notes, subtasks, list names, reminder text, recurrence settings, optional saved-place coordinates, trash, and preferences are stored locally.</div>
 
       <h3>Information you control</h3>
-      <p>Minimal processes task and list content you enter, subtasks, due dates, reminders, recurrence, priority, completion and deletion state, appearance settings, widget state, and local backup/import files. If a standard/guardian-mode user explicitly enables an arrival reminder, Minimal also stores the selected latitude, longitude, radius, and user-editable place label locally with that task. Android delivers reminder notifications and may reschedule time or location reminders after reboot, app update, or time-zone change. JSON backup files are created only at a location you choose and remain under your control.</p>
+      <p>Minimal processes task and list content you enter, subtasks, due dates, reminders, recurrence, priority, completion and deletion state, appearance settings, widget state, and local backup/import files. If a standard/guardian-mode user explicitly enables a nearby reminder, Minimal also stores the selected latitude, longitude, radius, and user-editable place label locally with that task. Android delivers reminder notifications and may reschedule timed reminders after reboot, app update, or time-zone change. JSON backup files are created only at a location you choose and remain under your control.</p>
 
       <h3>Optional service providers</h3>
       <ul>
@@ -33,7 +33,7 @@
       </ul>
 
       <h3>Permissions</h3>
-      <p>Minimal may request notification and exact-alarm access when you enable timed reminders, and receives reboot or time-change broadcasts to reschedule them. Optional arrival reminders require precise foreground location to save the current place and background location so Android can detect arrival after Minimal is closed. Minimal shows an in-context explanation before either location request, requests background access separately, and uses Android and Google Play services only for geofences the user creates. Black and Blue does not receive the place, sell or advertise with it, or attach it to analytics, diagnostics, billing, or support data. File access uses Android's system picker only when you export or import a backup. You can deny or revoke permissions in Android Settings; ordinary task management remains available.</p>
+      <p>Minimal may request notification and exact-alarm access when you enable timed reminders, and receives reboot or time-change broadcasts to reschedule them. Optional nearby reminders require precise foreground location to save the current place and check it only while Minimal is open or when you explicitly choose to check nearby tasks. Minimal does not request background location. An in-context explanation appears before the foreground location request. Black and Blue does not receive the place, sell or advertise with it, or attach it to analytics, diagnostics, billing, or support data. File access uses Android's system picker only when you export or import a backup. You can deny or revoke permissions in Android Settings; ordinary task management remains available.</p>
 
       <h3>Sharing, sale, security, and retention</h3>
       <p>We do not sell personal information, display ads, collect the advertising ID, or create public profiles. App-managed task data remains until you delete it, clear storage, or uninstall. Optional providers retain billing and diagnostics according to their policies and legal obligations. Data sent to providers is encrypted in transit.</p>
@@ -50,7 +50,7 @@
       <h2>Google Play Data Safety summary</h2>
       <ul>
         <li>Task content and backup files are processed locally and are not collected by Black and Blue.</li>
-        <li>Optional task-geofence coordinates and labels are processed through Android and Google Play services to deliver a one-time arrival reminder. Black and Blue does not receive them, and Minimal does not add them to advertising or analytics.</li>
+        <li>Optional saved-place coordinates and labels are checked against a foreground current-location reading only while Minimal is open to deliver a one-time nearby reminder. Black and Blue does not receive them, and Minimal does not add them to advertising or analytics.</li>
         <li>In standard/guardian mode, app interactions, app-instance and device/app information, masked-network-derived coarse country or region, crash logs, and diagnostics may be collected by Firebase for analytics, reliability, and security.</li>
         <li>In standard/guardian mode, purchase history is processed by Google Play and RevenueCat to sell, verify, restore, refund, and support Minimal Pro and optional tips. Tips do not unlock content or change app access.</li>
         <li>Family mode sends neither optional Firebase diagnostics nor RevenueCat purchase data and does not offer location reminders.</li>
@@ -63,7 +63,7 @@
       <h2>Data deletion</h2>
       <ol>
         <li>Delete tasks or lists inside Minimal; deleted tasks can be permanently removed from Trash.</li>
-        <li>Remove a task's arrival reminder to delete its saved geofence and coordinates while keeping the task.</li>
+        <li>Remove a task's nearby reminder to delete its saved place and coordinates while keeping the task.</li>
         <li>To remove all local Minimal data and reset family mode, use Android Settings → Apps → Minimal → Storage → Clear storage, or uninstall Minimal.</li>
         <li>Delete exported JSON backups separately from the location where you saved them.</li>
       </ol>
@@ -79,7 +79,7 @@
         <li>The complete task system remains free. The optional Minimal Pro one-time purchase unlocks cosmetic OLED/sepia themes and Fraunces/monospace typography. Google Play shows the live localized price, taxes, and refund terms before purchase.</li>
         <li>Standard/guardian mode may offer an optional repeatable tip to support the student developer. It grants no entitlement or feature and is never shown in under-13 family mode.</li>
         <li>Reminder timing can be affected by permission denial, battery optimization, device shutdown, manufacturer restrictions, time changes, and Android scheduling behavior.</li>
-        <li>Arrival reminders are approximate and may be delayed by device location settings, battery optimization, Google Play services, or background limits. Do not rely on them for safety-critical or emergency use.</li>
+        <li>Nearby reminders work only while Minimal is open and are approximate. They may be delayed by device location settings or Google Play services. Do not rely on them for safety-critical or emergency use.</li>
         <li>Keep independent copies of backups you need. Clearing storage or uninstalling can permanently remove local-only tasks.</li>
         <li>The app is provided subject to consumer rights that cannot legally be excluded. We do not guarantee uninterrupted operation or delivery of every reminder.</li>
       </ul>
